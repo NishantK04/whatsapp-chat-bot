@@ -1,16 +1,20 @@
+# Use official Java image
 FROM eclipse-temurin:21-jdk
 
+# Set working directory
 WORKDIR /app
+
+# Copy everything into container
 COPY . .
 
-# Set PORT environment variable (used by Spring Boot)
-ENV PORT 8080
+# Give Maven wrapper permission
+RUN chmod +x mvnw
 
-# Run Maven build
-RUN ./mvnw clean install
+# Build the Spring Boot app
+RUN ./mvnw clean package -DskipTests
 
-# Expose port (Render listens on 8080)
+# Expose port 8080 (Render will use it)
 EXPOSE 8080
 
-# Tell Spring Boot to use the right port
+# Run the app (explicitly set port)
 CMD ["java", "-Dserver.port=8080", "-jar", "target/whatsapp-chatbot-0.0.1-SNAPSHOT.jar"]
