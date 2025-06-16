@@ -33,6 +33,8 @@ public class WhatsAppController {
     public ResponseEntity<String> verifyWebhook(@RequestParam("hub.mode") String mode,
                                                 @RequestParam("hub.verify_token") String token,
                                                 @RequestParam("hub.challenge") String challenge) {
+        System.out.println("🌐 Received webhook verification request");
+                                            
         if ("subscribe".equals(mode) && "123456".equals(token)) {
             System.out.println("✅ Webhook verified by Meta.");
             return ResponseEntity.ok(challenge);
