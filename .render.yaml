@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: whatsapp-chat-bot
+    runtime: java
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -Dserver.port=8080 -jar target/whatsapp-chatbot-0.0.1-SNAPSHOT.jar"
+    env: 
+      - key: JAVA_HOME
+        value: /opt/render/project/.java
+    plan: free
