@@ -10,6 +10,11 @@ This project was developed as part of a Java Developer assignment to showcase ba
 
 ---
 
+## 📸 Screenshots  
+<img src="https://github.com/NishantK04/whatsapp-chat-bot/blob/main/demo.jpg" width="250">
+
+---
+
 ## 🚀 Live Demo
 
 🟢 **Webhook/Backend URL**  
@@ -60,3 +65,32 @@ switch (message) {
   case "help": return "You can ask me about our services, timings, or anything else.";
   default: return "I'm not sure I understand. Try saying 'help'.";
 }
+```
+---
+
+## 🔐 Environment Variables Required
+
+| Key                | Description                    |
+|--------------------|--------------------------------|
+| `WHATSAPP_TOKEN`   | Meta WhatsApp access token     |
+| `PHONE_NUMBER_ID`  | Meta phone number ID           |
+| `FIREBASE_CREDENTIALS` | Path to your Firebase service account key JSON file |
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by **Nishant Kumar**  
+📧 [nishantpal7510@gmail.com](mailto:nishantpal7510@gmail.com)  
+🔗 [GitHub - NishantK04](https://github.com/NishantK04)
+
+---
+
+## 📝 License
+
+This project is for **educational purposes** only.  
+You may **adapt**, **use**, or **extend** the code with **proper attribution**.
+
+
+
+
