@@ -8,6 +8,7 @@ public class PingController {
 
     @GetMapping("/ping")
     public String ping() {
+        System.out.println("✅ Ping route hit!");
         return "pong";
     }
 }
