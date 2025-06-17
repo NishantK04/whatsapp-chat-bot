@@ -1,4 +1,5 @@
-# 💬 WhatsApp Chatbot - Java + Firebase Integration
+# 💬 WhatsApp Chatbot - Java + Spring Boot + Firebase Integration
+
 
 ## 📌 About the Project
 **WhatsApp Chatbot** is an intelligent Java-based chatbot system integrated with the **WhatsApp Business Cloud API**. It is capable of:
